@@ -21,6 +21,9 @@ This app is designed to be an easy and stylish way to learn about hte many count
 - Search and filter interface will be different depending on the above method. Will include: Typing Search Bars, Drop Downs, & Boolean searches.
 - Once a country is selected, the user will be brought to a details page for the country.
 
+## Stretch Goals
+- Country Details page color scheme to change depending on option selected on home page.
+
 ## Resources
 [REST Countries API](https://restcountries.com/#rest-countries)
 
