@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useNavigate } from "react-router-dom";
+
 
 export default function Countries () {
     
@@ -26,6 +28,14 @@ export default function Countries () {
 
     },[])
 
+    let navigate = useNavigate()
+
+    const showCountry = (country) => {
+        navigate(`${country.index}`)
+        console.log(country.index)
+        
+    }
+
     if (!countries) {
         return <h1> loading please wait</h1>
         
@@ -36,7 +46,7 @@ export default function Countries () {
                 <h1>Countries</h1>
                 {/* <h2>{countries[3].name.official}</h2> */}
                 
-                {countries ? countries.map((country, index) => (<div key={index}><h3>{country.name.official}</h3></div>    )):null }
+                {countries ? countries.map((country, index) => (<div key={index}><h3>{country.name.common}</h3></div>    )):null }
             </div>)
 
         
