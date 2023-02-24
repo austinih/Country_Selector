@@ -1,4 +1,4 @@
-# Country Selector
+# Country Discovery App
 This app is designed to be an easy and stylish way to learn about hte many countries in the world. Userse will have multiple ways to search for countries so there will always be something new to expereince. Once a country is selected, the page will display interesteing details, an image of the country's flag, and a map.
 
 ## Wire-Frames
