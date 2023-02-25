@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom'
 
 export default function Nav () {
     return (
-        <div>
-            <NavLink to ="/">Home</NavLink>
-            <NavLink to ="/Countries">Countries</NavLink>
+        <div className='navBar'>
+            <NavLink to ="/" className='navLink'>Home</NavLink >
+            <NavLink to ="/Countries" className='navLink'>Countries</NavLink>
         </div>
     )
 }

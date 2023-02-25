@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header/>
-        <h1>React is working</h1>
+        
       </header>
       <main>
         <Main />

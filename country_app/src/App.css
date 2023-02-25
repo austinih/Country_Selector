@@ -1,7 +1,23 @@
 .App {
   text-align: center;
 }
-
+.navBar{
+  display: flex;
+  justify-content: left;
+}
+.navLink {
+  padding: 10px;
+}
+.flagContainer {
+  height: 100px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countryName { 
+  
+}
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
