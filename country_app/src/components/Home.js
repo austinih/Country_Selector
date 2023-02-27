@@ -1,8 +1,12 @@
 import LangSearch from "./langComponents/LangSearch"
-
+import { CountryContext } from "../DataContext"
+import { useState } from "react"
 
 export default function Home () {
 
+    const [languageInfo, setLanguageInfo] = useState({
+        passedLang: ''
+    })
     
     return (
         <div>
@@ -13,8 +17,9 @@ export default function Home () {
                         <input />
                         <button>Search</button>
                     </div>
+                    
                     <LangSearch/>
-                
+
                     <div className="homeBox" style={{backgroundColor: 'rgb(237, 29, 29)'}}>
                         <p>Planning to drive?</p>
                         <button className='driveBtns'>Left</button>

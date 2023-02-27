@@ -1,9 +1,10 @@
-import React, { useState} from 'react'
+import React, { useContext, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
-import LangRSLT from './LangRSLT'
 
 export default function LangSearch () {
     
+    
+
     const initialState = {language:''}
     let chosenLanguage = ''
     const [formState, setFormState] = useState(initialState)
@@ -23,8 +24,9 @@ export default function LangSearch () {
         // do something with the data in the component state
         console.log(formState)
         chosenLanguage = formState
-        console.log(chosenLanguage)
-        getResults(chosenLanguage)
+        getResults()
+        
+        // getResults(chosenLanguage)
         // clear the form
         setFormState(initialState);
   };

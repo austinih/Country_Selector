@@ -16,8 +16,8 @@ export default function Main () {
         <div className='main'>
             <Routes>
                 <Route path="/" element ={<Home/>}/>
-                <Route path="/countries" element ={<Countries countries={countries} setCountries={setCountries}/>}/>
-                <Route path="/countries/:index" element ={<CountryDetails countries={countries} setCountries={setCountries}/>}/>
+                <Route path="/AllCountries" element ={<Countries countries={countries} setCountries={setCountries}/>}/>
+                <Route path="/AllCountries/:index" element ={<CountryDetails countries={countries} setCountries={setCountries}/>}/>
                 <Route path="/LangRSLT" element ={<LangRSLT countries={countries} setCountries={setCountries}/>}/>
                 <Route path="/CountryLandLocked" element ={<LandLocked countries={countries} setCountries={setCountries}/>}/>
             </Routes>
