@@ -1,6 +1,9 @@
 import LangSearch from "./langComponents/LangSearch"
 
+
 export default function Home () {
+
+    
     return (
         <div>
             <div >

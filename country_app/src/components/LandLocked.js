@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 
 
-export default function Countries (props) {
+export default function LandLocked (props) {
     
     //Make a state to set data in √
     //Set up a useEffect to control my components lifecycle √
@@ -16,7 +16,7 @@ export default function Countries (props) {
     
 
     useEffect(() => {
-        const url = 'https://restcountries.com/v3/all'
+        const url = 'https://restcountries.com/v3.1/all?'
 
         const getCountries = async () => {
             const response = await axios.get(url)
