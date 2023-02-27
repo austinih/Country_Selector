@@ -18,6 +18,10 @@ p {
   padding-left: 10%;
   padding-right: 10%;
 }
+.driveBtns {
+  padding:20px;
+  margin: 15px 5px 0;
+}
 .spacer {
   width:100vw;
   height: 5vh;

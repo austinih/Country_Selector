@@ -19,8 +19,8 @@ export default function Home () {
                     </div>
                     <div className="homeBox" style={{backgroundColor: 'rgb(237, 29, 29)'}}>
                         <p>Planning to drive?</p>
-                        <button>Left</button>
-                        <button>Right</button>
+                        <button className='driveBtns'>Left</button>
+                        <button className='driveBtns'>Right</button>
                     </div>
                 </div>
                 <div className="spacer"></div>
