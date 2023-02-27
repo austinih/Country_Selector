@@ -3,20 +3,12 @@ import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 
 
-export default function CountryLanguage (props) {
+export default function LangRSLT (props) {
     
-    //Make a state to set data in √
-    //Set up a useEffect to control my components lifecycle √
-    //Organize API Links / URL √
-    //Make API call √
-    //Set our data in state and log it √
-    //render our data
-    //Set up guard
-    
-    
+    let language = "korean"
 
     useEffect(() => {
-        const url = 'https://restcountries.com/v3.1/lang/Korean'
+        const url = `https://restcountries.com/v3.1/lang/${language}`
 
         const getCountries = async () => {
             const response = await axios.get(url)

@@ -1,3 +1,5 @@
+import LangSearch from "./langComponents/LangSearch"
+
 export default function Home () {
     return (
         <div>
@@ -8,16 +10,8 @@ export default function Home () {
                         <input />
                         <button>Search</button>
                     </div>
-                    <div className="homeBox" style={{backgroundColor: 'rgb(158, 60, 208)'}}>
-                        <p>What language do you want to hear?</p>
-                        <input list='languages'/>
-                            <datalist id="languages">
-                                <option value="Spanish" />
-                                <option value="French" />
-                                <option value="Korean" />
-                            </datalist>
-                        <button>Search</button>
-                    </div>
+                    <LangSearch/>
+                
                     <div className="homeBox" style={{backgroundColor: 'rgb(237, 29, 29)'}}>
                         <p>Planning to drive?</p>
                         <button className='driveBtns'>Left</button>
