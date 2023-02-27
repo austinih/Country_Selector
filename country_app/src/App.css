@@ -1,9 +1,33 @@
 .App {
   text-align: center;
 }
+.homeGrid {
+  display: flex;
+  justify-content: space-evenly;
+  ;
+}
+.homeBox {
+  border-radius: 10%;
+  width: 32vw;
+  height: 40vh;
+  color: white;
+  font-size: 3vw;
+  vertical-align: middle;
+}
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.spacer {
+  width:100vw;
+  height: 5vh;
+}
 .navBar{
   display: flex;
   justify-content: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: lightgray;
 }
 .navLink {
   padding: 10px;
