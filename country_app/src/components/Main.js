@@ -3,6 +3,7 @@ import Home from './Home'
 import Countries from './Countries'
 import { useState, useEffect } from 'react'
 import CountryDetails from './CountryDetails'
+import CountryLanguage from './CountryLanguage'
 
 
 export default function Main () {
@@ -16,6 +17,7 @@ export default function Main () {
                 <Route path="/" element ={<Home/>}/>
                 <Route path="/countries" element ={<Countries countries={countries} setCountries={setCountries}/>}/>
                 <Route path="/countries/:index" element ={<CountryDetails countries={countries} setCountries={setCountries}/>}/>
+                <Route path="/CountryLanguage" element ={<CountryLanguage countries={countries} setCountries={setCountries}/>}/>
             </Routes>
         </div>
     )

@@ -12,6 +12,7 @@ export default function Home () {
                         <p>What language do you want to hear?</p>
                         <input list='languages'/>
                             <datalist id="languages">
+                                <option value="Spanish" />
                                 <option value="French" />
                                 <option value="Korean" />
                             </datalist>
@@ -34,15 +35,16 @@ export default function Home () {
                         <button>Explore</button>
                     </div>
                     <div className="homeBox" style={{backgroundColor: 'gold'}}>
-                        <p>How'd you like to explore the whole Continent?</p>
+                        <p>Interested in a whole Region?</p>
                         <input list='regions'/>
                             <datalist id="regions">
-                                <option value="North America" />
-                                <option value="South America" />
-                                <option value="Europe" />
-                                <option value="Asia" />
                                 <option value="Africa" />
-                                <option value="Australia" />
+                                <option value="Antartica" />
+                                <option value="Asia" />
+                                <option value="Europe" />
+                                <option value="North America" />
+                                <option value="Oceania" />
+                                <option value="South America" />
 
                             </datalist>
                         <button>Search</button>

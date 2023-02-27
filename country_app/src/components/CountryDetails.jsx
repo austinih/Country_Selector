@@ -15,9 +15,9 @@ export default function CountryDetails (props) {
     },[props.countries, index])
     
     
-    if (!props.countries) {
-        return <h1> loading please wait</h1>
-    } else {
+    // if (!props.countries) {
+    //     return <h1> loading please wait</h1>
+    // } else {
 
     return (
         <div>
@@ -28,5 +28,5 @@ export default function CountryDetails (props) {
 
         </div>
     )
-    }
+    // }
 }

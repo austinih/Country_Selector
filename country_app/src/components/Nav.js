@@ -5,6 +5,7 @@ export default function Nav () {
         <div className='navBar'>
             <NavLink to ="/" className='navLink'>Home</NavLink >
             <NavLink to ="/Countries" className='navLink'>Countries</NavLink>
+            <NavLink to ="/CountryLanguage" className='navLink'>Languages</NavLink>
         </div>
     )
 }
