@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
-import { useState } from 'react';
+import React,  { useState } from 'react';
 import DataContext from './DataContext';
 
 
@@ -9,7 +9,7 @@ function App() {
 
   const [countryInfo, setCountryInfo] = useState({
     countryName: '',
-    spokenLanguage: ''
+    spokenLanguage: '',
 
   });
   

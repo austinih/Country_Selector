@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import DataContext from '../../DataContext';
@@ -9,10 +9,10 @@ export default function LangRSLT (props) {
     
     const { countryInfo, setCountryInfo } = useContext(DataContext)
 
-    let language = "korean"
+    // let language = "korean"
 
     useEffect(() => {
-        const url = `https://restcountries.com/v3.1/lang/${language}`
+        const url = `https://restcountries.com/v3.1/lang/${countryInfo.spokenLanguage}`
 
         const getCountries = async () => {
             const response = await axios.get(url)
@@ -30,8 +30,6 @@ export default function LangRSLT (props) {
     const showCountry = (index) => {
         navigate(`${index}`)
         console.log(`${index}`)
-        
-        
     }
 
     if (!props.countries) {

@@ -24,7 +24,7 @@ export default function LangSearch () {
         event.preventDefault();
         // do something with the data in the component state
         console.log(formState)
-        setCountryInfo(formState.value)
+        setCountryInfo(formState)
         console.log(countryInfo)
         getResults()
         
