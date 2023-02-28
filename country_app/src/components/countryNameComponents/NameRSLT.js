@@ -5,13 +5,14 @@ import DataContext from '../../DataContext';
 
 
 
-export default function LangRSLT (props) {
+export default function NameRSLT (props) {
     
     const { countryInfo, setCountryInfo } = useContext(DataContext)
-
+    
+    
 
     useEffect(() => {
-        const url = `https://restcountries.com/v3.1/lang/${countryInfo.spokenLanguage}`
+        const url = `https://restcountries.com/v3.1/name/${countryInfo.countryName}`
 
         const getCountries = async () => {
             const response = await axios.get(url)
@@ -37,7 +38,7 @@ export default function LangRSLT (props) {
     } else {
         return (
             <div className='countryContainer'>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>All Countries </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: ... "{countryInfo.countryName}" </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (

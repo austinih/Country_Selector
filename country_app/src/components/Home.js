@@ -1,5 +1,6 @@
 import LangSearch from "./langComponents/LangSearch"
 import { useState } from "react"
+import NameSearch from "./countryNameComponents/NameSearch"
 
 export default function Home () {
 
@@ -11,11 +12,7 @@ export default function Home () {
         <div>
             <div >
                 <div className="homeGrid">
-                    <div className="homeBox" style={{backgroundColor: 'rgb(16, 220, 64)'}}>
-                        <p>Know where you're going?</p>
-                        <input />
-                        <button>Search</button>
-                    </div>
+                    <NameSearch/>
                     
                     <LangSearch/>
 
