@@ -24,6 +24,7 @@ export default function NameSearch () {
         // do something with the data in the component state
         console.log(formState)
         setCountryInfo(formState)
+        countryInfo.colorTheme ='rgb(16, 220, 64)'
         console.log(countryInfo)
         getResults()
         

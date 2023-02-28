@@ -37,7 +37,7 @@ export default function NameRSLT (props) {
         
     } else {
         return (
-            <div className='countryContainer'>
+            <div className='countryContainer' >
                 <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: ... "{countryInfo.countryName}" </h1>
                 
                 <div className='countryList'>

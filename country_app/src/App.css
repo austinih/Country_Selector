@@ -62,8 +62,8 @@
 }
 .countryCard {
   width:250px;
-  padding: 0 30px 0;
-  /* border-left: 2px solid rgb(16, 220, 64); */
+  padding: 0 40px 0;
+  border-left: 2px solid rgb(16, 220, 64);
 }
 .countrySelect:hover { 
 transform: scale(1.3);
