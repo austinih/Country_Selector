@@ -37,7 +37,7 @@ export default function LangRSLT (props) {
     } else {
         return (
             <div className='countryContainer'>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>All Countries </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>{countryInfo.spokenLanguage} Speaking Countries </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
