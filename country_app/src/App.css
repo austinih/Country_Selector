@@ -62,11 +62,7 @@ text-decoration-thickness: 5px;
 margin-left: 30px;
 }
 /* Country Details CSS */
-.flagContainer {
-  height: 100px;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.flag {
+  
 }
 

@@ -32,7 +32,7 @@ export default function Home () {
                         <button>Explore</button>
                     </div>
                     <div className="homeBox" style={{backgroundColor: 'rgb(254, 107, 3)'}}>
-                        <p>Afraid of the Ocean?</p>
+                        <p>Not a fan of the Ocean?</p>
                         <button>Explore</button>
                     </div>
                     <div className="homeBox" style={{backgroundColor: 'gold'}}>

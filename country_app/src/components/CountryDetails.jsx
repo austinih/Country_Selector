@@ -14,20 +14,16 @@ export default function CountryDetails (props) {
         setCountry(selectedCountry)
     },[props.countries, index])
     
-    // console.log(country.name.common)
-    // if (!props.countries) {
-    //     return <h1> loading please wait</h1>
-    // } else {
-
-    return (
-        <div>
-            <div className="flagContainer" style={{background: `url(${country.flags[0]}) no-repeat center center` }}>
-            </div>    
+    
+        return country && country.flags ? (
+            <div>
+                <img src={country.flags[0]} alt='flag' className='flag'></img>
                 <h1 className='countryName'>{country.name.common}</h1>   
-            
-            <h3>Capital: {country.capital}</h3>
-
-        </div>
-    )
-    // }
+                
+                <h3>Capital: {country.capital}</h3>
+    
+            </div>
+        ) : <h1> Loading, please wait</h1>
+    
+    
 }

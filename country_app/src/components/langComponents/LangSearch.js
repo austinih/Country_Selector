@@ -1,12 +1,13 @@
 import React, { useContext, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
+import DataContext from '../../DataContext'
 
 export default function LangSearch () {
     
-    
+    const { countryInfo, setCountryInfo } = useContext(DataContext)
 
-    const initialState = {language:''}
-    let chosenLanguage = ''
+    const initialState = {spokenLanguage:''}
+    
     const [formState, setFormState] = useState(initialState)
 
     let navigate = useNavigate()
@@ -23,12 +24,13 @@ export default function LangSearch () {
         event.preventDefault();
         // do something with the data in the component state
         console.log(formState)
-        chosenLanguage = formState
+        setCountryInfo(formState.value)
+        console.log(countryInfo)
         getResults()
         
         // getResults(chosenLanguage)
         // clear the form
-        setFormState(initialState);
+        // setFormState(initialState);
   };
     
     return (      
@@ -37,7 +39,8 @@ export default function LangSearch () {
         <div className="homeBox" style={{backgroundColor: 'rgb(158, 60, 208)'}}>
             <p>What language do you want to hear?</p>
             <form onSubmit={handleSubmit}>
-                <input id="language" type="text" onChange={handleChange}/>
+                <label htmlFor="spokenLanguage"></label>
+                <input id="spokenLanguage" type="text" onChange={handleChange}/>
                 <button type='submit'>Search</button>
             </form>
         </div>

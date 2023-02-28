@@ -5,44 +5,20 @@ import { useNavigate } from "react-router-dom";
 
 export default function Countries (props) {
     
-    //Make a state to set data in √
-    //Set up a useEffect to control my components lifecycle √
-    //Organize API Links / URL √
-    //Make API call √
-    //Set our data in state and log it √
-    //render our data
-    //Set up guard
-    
-    
+       useEffect(() => {
+        const url = 'https://restcountries.com/v3/all'
 
-    // useEffect(() => {
-    //     const url = 'https://restcountries.com/v3/all'
-
-    //     const getCountries = async () => {
-    //         const response = await axios.get(url)
-    //         console.log(response.data)
-    //         props.setCountries(response.data)
-    //     }
-
-    //     getCountries()
-
-    // },[])
-
-    let navigate = useNavigate()
-
-    useEffect(() => {
-
-        const url2 = 'https://restcountries.com/v3.1/name'
-            const getCountryName = async () => {
-                const response = await axios.get(url2)
-                console.log(response.data)
-                props.setCountries(response.data)
-                
+        const getCountries = async () => {
+            const response = await axios.get(url)
+            console.log(response.data)
+            props.setCountries(response.data)
         }
 
-        getCountryName()
+        getCountries()
 
     },[])
+
+    let navigate = useNavigate()
 
     const showCountry = (index) => {
         navigate(`${index}`)
@@ -66,7 +42,5 @@ export default function Countries (props) {
                 </div>
             </div>)
 
-        
-        
     }
 }
