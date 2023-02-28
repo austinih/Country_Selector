@@ -15,20 +15,34 @@ export default function Countries (props) {
     
     
 
-    useEffect(() => {
-        const url = 'https://restcountries.com/v3/all'
+    // useEffect(() => {
+    //     const url = 'https://restcountries.com/v3/all'
 
-        const getCountries = async () => {
-            const response = await axios.get(url)
-            console.log(response.data)
-            props.setCountries(response.data)
-        }
+    //     const getCountries = async () => {
+    //         const response = await axios.get(url)
+    //         console.log(response.data)
+    //         props.setCountries(response.data)
+    //     }
 
-        getCountries()
+    //     getCountries()
 
-    },[])
+    // },[])
 
     let navigate = useNavigate()
+
+    useEffect(() => {
+
+        const url2 = 'https://restcountries.com/v3.1/name'
+            const getCountryName = async () => {
+                const response = await axios.get(url2)
+                console.log(response.data)
+                props.setCountries(response.data)
+                
+        }
+
+        getCountryName()
+
+    },[])
 
     const showCountry = (index) => {
         navigate(`${index}`)
@@ -46,7 +60,7 @@ export default function Countries (props) {
                 <h1 style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>All Countries </h1>
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
-                        <div key={index} className="countryCard" onClick={()=> showCountry(index)}>
+                        <div key={index} className="countryCard" onClick={()=> showCountry(index) }>
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>
