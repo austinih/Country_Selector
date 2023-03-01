@@ -14,15 +14,18 @@
 .navBar{
   position: absolute;
   display: flex;
-  justify-content: center;
-  /* margin-top: 2vh; */
-  width: 40vw;
-  background-color: rgba(167, 164, 164, 0.75);
-  border-radius: 2em;
+ 
+  
+  background-color: rgba(167, 164, 164, 1);
+  
   border-radius: 0px 0px 40px 40px;  
 }
 .navLink {
-  padding: 10px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.navLink:visited{
+  color: white;
 }
 /* Home Page CSS */
   .homeGrid {
@@ -39,7 +42,7 @@
     vertical-align: middle;
   }
   .homeBoxContents {
-    margin-top: 10vh;
+    margin-top: 15vh;
   }
   p {
     padding-left: 10%;
@@ -49,16 +52,33 @@
     padding:20px;
     margin: 15px 5px 0;
   }
+  #nameBox {
+    background-image: radial-gradient(rgb(106, 197, 127), rgb(9, 111, 33));
+    /* background-image: linear-gradient(to right, rgb(106, 197, 127), rgb(9, 111, 33)) */
+  }
+  #langBox {
+    background-image: radial-gradient( rgb(154, 111, 175), rgb(92, 37, 120));
+    /* background-image: linear-gradient(to left, rgb(154, 111, 175), rgb(92, 37, 120)) */
+  }
+  #currencyBox {
+    background-image: radial-gradient( rgb(228, 141, 78), rgb(212, 104, 27));
+    /* background-image: linear-gradient(to right, rgb(228, 141, 78), rgb(212, 104, 27)) */
+  }
+  #regionBox {
+    background-image: radial-gradient( rgb(82, 144, 206), rgb(33, 87, 141));
+    /* background-image: linear-gradient(to left, rgb(82, 144, 206), rgb(33, 87, 141)) */
+  }
   .spacer {
     width:100vw;
-    height: 1vh;
+    height: 10vh;
   }
 
 /* Country Select CSS */
-.countryContainer{
+.RSLTSPage {
   border-left: 150px solid rgb(16, 220, 64);
-  height: 95vh;
+  height: 100%;
 }
+
 .listTitle {
   padding: 25px;
 }

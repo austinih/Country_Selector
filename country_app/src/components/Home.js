@@ -13,13 +13,13 @@ export default function Home () {
         <div>
             <div >
                 <div className="homeGrid">
-                    <div className="homeBox" style={{backgroundColor: 'rgb(16, 220, 64)'}}>
+                    <div className="homeBox" id='nameBox' >
                         <div className="homeBoxContents">
                             <p>Know where you're going?</p>
                             <NameSearch/>
                         </div>
                     </div>
-                    <div className="homeBox" style={{backgroundColor: 'rgb(158, 60, 208)'}}>
+                    <div className="homeBox" id='langBox' >
                         <div className="homeBoxContents">
                             <p>What language do you want to hear?</p>
                             <LangSearch/>
@@ -30,13 +30,13 @@ export default function Home () {
                 {/* <div className="spacer"></div> */}
                 <div className="homeGrid">
                     
-                    <div className="homeBox" style={{backgroundColor: 'rgb(254, 107, 3)'}}>
+                    <div className="homeBox" id='currencyBox' >
                         <div className="homeBoxContents">
                             <p>Looking to spend a specific Currency?</p>
                             <button>Explore</button>
                         </div>
                     </div>
-                    <div className="homeBox" style={{backgroundColor: 'dodgerblue'}}>
+                    <div className="homeBox" id='regionBox' >
                         <div className="homeBoxContents">
                             <p>Interested in a whole Region?</p>
                             <RegionSearch/>

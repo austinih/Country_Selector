@@ -38,7 +38,8 @@ export default function NameRSLT (props) {
         
     } else {
         return (
-            <div className='countryContainer' >
+            <div className='RSLTSPage' >
+                
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
                     <NameSearch setCountries={props.setCountries} />
@@ -52,6 +53,7 @@ export default function NameRSLT (props) {
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>
+                
             </div>)
 
         
