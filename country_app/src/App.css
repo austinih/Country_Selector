@@ -10,23 +10,22 @@
 .navBar{
   position: absolute;
   display: flex;
- 
-  
-  /* background-image: linear-gradient(rgb(122, 118, 118),rgb(66, 61, 61)); */
   background-color: #233D4D;
-  
   border-radius: 0px 0px 40px 40px;  
 }
 .navLink {
   padding: 10px 30px;
   text-decoration: none;
+  font-weight: bold;
 }
 .navLink:visited{
   color: white;
 }
+.navLink:hover {
+  transform: scale(1.4);
+}
 /* Home Page CSS */
   .homeGrid {
-    /* margin-top: 3vh; */
     display: flex;
     justify-content: space-evenly;
     ;
