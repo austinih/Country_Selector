@@ -39,7 +39,11 @@ export default function NameRSLT (props) {
     } else {
         return (
             <div className='countryContainer' >
-                <NameSearch setCountries={props.setCountries}/>
+                <div className='newSearchBar' >
+                    <div className="spacer"></div>
+                    <NameSearch setCountries={props.setCountries} />
+                    <h4>Click "Search" twice to update results</h4>
+                </div>
                 <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryName}" </h1>
                 
                 <div className='countryList'>

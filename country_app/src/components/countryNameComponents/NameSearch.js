@@ -8,7 +8,7 @@ export default function NameSearch (props) {
     const { countryInfo, setCountryInfo } = useContext(DataContext)
     const initialState = {countryName:''}
     const [formState, setFormState] = useState(initialState)
-
+    let navigate = useNavigate()
 
     const url = `https://restcountries.com/v3.1/name/${countryInfo.countryName}`
     const getCountries = async () => {
@@ -16,22 +16,13 @@ export default function NameSearch (props) {
         console.log('countries', response.data)
         props.setCountries(response.data)
     }
-
-    
-
-    let navigate = useNavigate()
-
-
     const getResults = () => {
         console.log('results')
         navigate(`/NameRSLT`)
     }
-
     const handleChange = event => {
         setFormState({...formState, [event.target.id]: event.target.value})
-    
     }
-    
     const handleSubmit = async event => {
         event.preventDefault();
         // do something with the data in the component state

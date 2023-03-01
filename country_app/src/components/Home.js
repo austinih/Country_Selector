@@ -16,9 +16,10 @@ export default function Home () {
                         <p>Know where you're going?</p>
                         <NameSearch/>
                     </div>
-                    
-                    <LangSearch/>
-
+                    <div className="homeBox" style={{backgroundColor: 'rgb(158, 60, 208)'}}>
+                        <p>What language do you want to hear?</p>
+                        <LangSearch/>
+                    </div>
                     <div className="homeBox" style={{backgroundColor: 'rgb(237, 29, 29)'}}>
                         <p>Planning to drive?</p>
                         <button className='driveBtns'>Left</button>

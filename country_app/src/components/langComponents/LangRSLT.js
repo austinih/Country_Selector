@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import DataContext from '../../DataContext';
+import LangSearch from './LangSearch';
 
 
 
@@ -37,6 +38,11 @@ export default function LangRSLT (props) {
     } else {
         return (
             <div className='countryContainer'>
+                <div className='newSearchBar' >
+                    <div className="spacer"></div>
+                    <LangSearch setCountries={props.setCountries} />
+                    <h4>Click "Search" twice to update results</h4>
+                </div>
                 <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>{countryInfo.spokenLanguage} Speaking Countries </h1>
                 
                 <div className='countryList'>
