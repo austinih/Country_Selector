@@ -38,17 +38,17 @@ export default function NameRSLT (props) {
         
     } else {
         return (
-            <div className='countryContainer' >
+            <div className='countryContainer' style={{borderLeft: '150px solid #23beb6',borderRight: '150px solid #23beb6'}}>
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
                     <RegionSearch setCountries={props.setCountries} />
                     <h4>Click "Search" twice to update results</h4>
                 </div>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryRegion}" </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#23beb6', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryRegion}" </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
-                        <div key={index} className="countryCard" onClick={()=> showCountry(index)}>
+                        <div key={index} className="countryCard" onClick={()=> showCountry(index)} style={{borderColor: '#23beb6'}}>
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>

@@ -38,14 +38,15 @@ export default function NameRSLT (props) {
         
     } else {
         return (
-            <div className='RSLTSPage' >
+            <div className='RSLTSPage' style={{borderLeft: '150px solid #A1C181',
+                borderRight: '150px solid #A1C181'}} >
                 
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
                     <NameSearch setCountries={props.setCountries} />
                     <h4>Click "Search" twice to update results</h4>
                 </div>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryName}" </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#A1C181', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryName}" </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (

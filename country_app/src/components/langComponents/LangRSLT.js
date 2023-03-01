@@ -37,17 +37,17 @@ export default function LangRSLT (props) {
         
     } else {
         return (
-            <div className='countryContainer'>
+            <div className='countryContainer' style={{borderLeft: '150px solid #FCCA46',borderRight: '150px solid #FCCA46'}}>
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
                     <LangSearch setCountries={props.setCountries} />
                     <h4>Click "Search" twice to update results</h4>
                 </div>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>{countryInfo.spokenLanguage} Speaking Countries </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#FCCA46', textDecorationThickness: '5px'}}>{countryInfo.spokenLanguage} Speaking Countries </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
-                        <div key={index} className="countryCard" onClick={()=> showCountry(index)}>
+                        <div key={index} className="countryCard" onClick={()=> showCountry(index)} style={{borderColor: '#FCCA46'}}>
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>
