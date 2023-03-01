@@ -1,20 +1,45 @@
 .App {
   text-align: center;
 }
+/* Header CSS */
+.header {
+  /* background-color: antiquewhite;
+  height: 10vh;
+  margin-top: -2vh;; */
+  display: flex;
+  justify-content: center;
+  /* justify-content: left; */
+}
+/* NavBar CSS */
+.navBar{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 2vh; */
+  width: 40vw;
+  background-color: rgba(167, 164, 164, 0.75);
+  border-radius: 2em;
+  border-radius: 0px 0px 40px 40px;  
+}
+.navLink {
+  padding: 10px;
+}
 /* Home Page CSS */
   .homeGrid {
-    margin-top: 3vh;
+    /* margin-top: 3vh; */
     display: flex;
     justify-content: space-evenly;
     ;
   }
   .homeBox {
-    border-radius: 10%;
-    width: 30vw;
-    height: 40vh;
+    width: 50vw;
+    height: 50vh;
     color: white;
     font-size: 3vw;
     vertical-align: middle;
+  }
+  .homeBoxContents {
+    margin-top: 10vh;
   }
   p {
     padding-left: 10%;
@@ -28,18 +53,7 @@
     width:100vw;
     height: 1vh;
   }
-/* NavBar CSS */
-.navBar{
-  display: flex;
-  justify-content: left;
-  margin-top: 2vh;
-  
-  background-color: lightgray;
-  height:5vh;
-}
-.navLink {
-  padding: 10px;
-}
+
 /* Country Select CSS */
 .countryContainer{
   border-left: 150px solid rgb(16, 220, 64);

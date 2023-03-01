@@ -10,6 +10,7 @@ function App() {
   const [countryInfo, setCountryInfo] = useState({
     countryName: '',
     spokenLanguage: '',
+    countryRegion: '',
     colorTheme: '',
   });
   

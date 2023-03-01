@@ -7,7 +7,7 @@ export default function Header () {
 
 
     return (
-        <div>   
+        <div className="header">   
                 <Nav />
         </div>
     )

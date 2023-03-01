@@ -6,6 +6,7 @@ import CountryDetails from './CountryDetails'
 import CountryDetailsV2 from './CountryDetailsV2'
 import LangRSLT from './langComponents/LangRSLT'
 import NameRSLT from './countryNameComponents/NameRSLT'
+import RegionRSLT from './regionComponents/RegionRSLT'
 
 
 export default function Main () {
@@ -22,8 +23,12 @@ export default function Main () {
                 
                 <Route path="/NameRSLT" element ={<NameRSLT countries={countries} setCountries={setCountries}/>}/>
                 <Route path="/NameRSLT/:index" element ={<CountryDetailsV2 countries={countries} setCountries={setCountries}/>}/>
+
                 <Route path="/LangRSLT" element ={<LangRSLT countries={countries} setCountries={setCountries}/>}/>
                 <Route path="/LangRSLT/:index" element ={<CountryDetailsV2 countries={countries} setCountries={setCountries}/>}/>
+
+                <Route path="/RegionRSLT" element ={<RegionRSLT countries={countries} setCountries={setCountries}/>}/>
+                <Route path="/RegionRSLT/:index" element ={<CountryDetailsV2 countries={countries} setCountries={setCountries}/>}/>
             </Routes>
         </div>
     )
