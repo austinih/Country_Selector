@@ -12,7 +12,10 @@ export default function Home () {
         <div>
             <div >
                 <div className="homeGrid">
-                    <NameSearch/>
+                    <div className="homeBox" style={{backgroundColor: 'rgb(16, 220, 64)'}}>
+                        <p>Know where you're going?</p>
+                        <NameSearch/>
+                    </div>
                     
                     <LangSearch/>
 

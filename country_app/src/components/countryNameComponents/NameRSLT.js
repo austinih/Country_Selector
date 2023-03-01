@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import DataContext from '../../DataContext';
+import NameSearch from './NameSearch';
 
 
 
@@ -38,7 +39,8 @@ export default function NameRSLT (props) {
     } else {
         return (
             <div className='countryContainer' >
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: ... "{countryInfo.countryName}" </h1>
+                <NameSearch setCountries={props.setCountries}/>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: 'rgb(16, 220, 64)', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryName}" </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
