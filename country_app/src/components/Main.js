@@ -20,7 +20,7 @@ export default function Main () {
             <Routes>
                 <Route path="/" element ={<Home/>}/>
                 <Route path="/AllCountries" element ={<Countries countries={countries} setCountries={setCountries}/>}/>
-                <Route path="/AllCountries/:index" element ={<CountryDetails countries={countries} setCountries={setCountries}/>}/>
+                <Route path="/AllCountries/:index" element ={<CountryDetailsV2 countries={countries} setCountries={setCountries}/>}/>
                 
                 <Route path="/NameRSLT" element ={<NameRSLT countries={countries} setCountries={setCountries}/>}/>
                 <Route path="/NameRSLT/:index" element ={<CountryDetailsV2 countries={countries} setCountries={setCountries}/>}/>

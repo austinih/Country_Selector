@@ -26,10 +26,8 @@ export default function CurrencySearch (props) {
     const handleSubmit = async event => {
         event.preventDefault();
         // do something with the data in the component state
-        console.log(formState)
-        setCountryInfo(formState)
-        countryInfo.colorTheme ='rgb(16, 220, 64)'
-        console.log(countryInfo)
+        countryInfo.countryCurrency = formState.countryCurrency
+        countryInfo.colorTheme = '#FE7F2D'
         getCountries()
         getResults()        
   };

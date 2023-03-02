@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
-
+import DataContext from '../DataContext'
 
 export default function Countries (props) {
     
+    const { countryInfo, setCountryInfo } = useContext(DataContext)
+
+
        useEffect(() => {
-        const url = 'https://restcountries.com/v3/all'
+        const url = 'https://restcountries.com/v3.1/all'
 
         const getCountries = async () => {
             const response = await axios.get(url)
@@ -21,8 +24,9 @@ export default function Countries (props) {
     let navigate = useNavigate()
 
     const showCountry = (index) => {
+        countryInfo.colorTheme = '#233D4D'
         navigate(`${index}`)
-        console.log(`${index}`)
+        
         
     }
 

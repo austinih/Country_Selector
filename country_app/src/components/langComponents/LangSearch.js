@@ -14,7 +14,6 @@ export default function LangSearch (props) {
 
     const getCountries = async () => {
         const response = await axios.get(url)
-        console.log(response.data)
         props.setCountries(response.data)
     }
     const getResults = () => {
@@ -27,16 +26,14 @@ export default function LangSearch (props) {
     
     const handleSubmit = event => {
         event.preventDefault();
-        console.log(formState)
-        setCountryInfo(formState)
+        // setCountryInfo(formState)
+        countryInfo.spokenLanguage = formState.spokenLanguage
+        countryInfo.colorTheme = '#FCCA46'
         getCountries()
         getResults()
   };
     
     return (      
-
-
-        
             <form onSubmit={handleSubmit}>
                 <label htmlFor="spokenLanguage"></label>
                 <input id="spokenLanguage" type="text" onChange={handleChange}/>

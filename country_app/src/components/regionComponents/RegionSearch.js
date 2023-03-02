@@ -28,10 +28,8 @@ export default function RegionSearch (props) {
     const handleSubmit = async event => {
         event.preventDefault();
         // do something with the data in the component state
-        console.log(formState)
-        // setCountryInfo(formState)
         countryInfo.countryRegion = formState.countryRegion
-        console.log(countryInfo)
+        countryInfo.colorTheme = '#23beb6'
         getCountries()
         getResults()        
   };

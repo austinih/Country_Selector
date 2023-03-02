@@ -46,7 +46,7 @@ export default function CurrencyRSLT (props) {
                     <CurrencySearch setCountries={props.setCountries} />
                     <h4>Click "Search" twice to update results</h4>
                 </div>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#FE7F2D', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryName}" </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#FE7F2D', textDecorationThickness: '5px'}}>Countries that Accept "{countryInfo.countryCurrency}" </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
