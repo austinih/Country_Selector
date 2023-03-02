@@ -1,17 +1,22 @@
 .App {
   text-align: center;
+  
 }
+
 /* Header CSS */
 .header {
   display: flex;
   justify-content: center;
 }
+/* Need to include this link in my git hub */
+/* <a target="_blank" href="https://icons8.com/icon/43164/earth-globe">Earth Globe</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
 /* NavBar CSS */
 .navBar{
   position: absolute;
   display: flex;
   background-color: #233D4D;
   border-radius: 0px 0px 40px 40px;  
+  color: white;
 }
 .navLink {
   padding: 10px 30px;
@@ -66,9 +71,22 @@
   }
 
 /* Country Select CSS */
-.RSLTSPage {
-  height: 100%;
+.RSLTs_Page{
+  display: flex;
+  justify-content: space-between;
 }
+.leftBox{
+  height:auto;
+  width:15%;
+  background-color: #FCCA46;
+}
+
+.rightBox{
+  height:auto;
+  width:15%;
+  background-color: #FCCA46;
+}
+
 
 .listTitle {
   padding: 25px;
@@ -79,7 +97,7 @@
   justify-content:baseline;
   margin-left: 100px;
   margin-bottom: 50px;
-  width: 85vw;
+  width: 70%vw;
   text-align: left;
 
 }

@@ -7,7 +7,7 @@ import axios from 'axios'
 export default function RegionSearch (props) {
     
     const { countryInfo, setCountryInfo } = useContext(DataContext)
-    const value = {countryRegion:''}
+    const value = {countryRegion:'Africa'}
     const [formState, setFormState] = useState(value)
     let navigate = useNavigate()
 

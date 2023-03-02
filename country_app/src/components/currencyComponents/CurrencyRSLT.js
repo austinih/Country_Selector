@@ -2,18 +2,18 @@ import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import DataContext from '../../DataContext';
-import RegionSearch from './RegionSearch';
+import CurrencySearch from './CurrencySearch';
 
 
 
-export default function NameRSLT (props) {
+export default function CurrencyRSLT (props) {
     
     const { countryInfo, setCountryInfo } = useContext(DataContext)
     
     
 
     useEffect(() => {
-        const url = `https://restcountries.com/v3.1/region/${countryInfo.countryRegion}`
+        const url = `https://restcountries.com/v3.1/currency/${countryInfo.countryCurrency}`
 
         const getCountries = async () => {
             const response = await axios.get(url)
@@ -38,20 +38,23 @@ export default function NameRSLT (props) {
         
     } else {
         return (
-            <div className='countryContainer' style={{borderLeft: '150px solid #23beb6',borderRight: '150px solid #23beb6'}}>
+            <div className='countryContainer' style={{borderLeft: '150px solid #FE7F2D',
+                borderRight: '150px solid #FE7F2D'}} >
+                
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
-                    <RegionSearch setCountries={props.setCountries} />
+                    <CurrencySearch setCountries={props.setCountries} />
                     <h4>Click "Search" twice to update results</h4>
                 </div>
-                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#23beb6', textDecorationThickness: '5px'}}>Countries in {countryInfo.countryRegion} </h1>
+                <h1 className='listTitle' style={{textDecoration: 'underline', textDecorationColor: '#FE7F2D', textDecorationThickness: '5px'}}>Results for: "{countryInfo.countryName}" </h1>
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
-                        <div key={index} className="countryCard" onClick={()=> showCountry(index)} style={{borderColor: '#23beb6'}}>
+                        <div key={index} className="countryCard" onClick={()=> showCountry(index)} style={{borderColor: '#FE7F2D'}}>
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>
+                
             </div>)
 
         

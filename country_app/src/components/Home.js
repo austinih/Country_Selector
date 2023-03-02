@@ -2,6 +2,7 @@ import LangSearch from "./langComponents/LangSearch"
 import { useState } from "react"
 import NameSearch from "./countryNameComponents/NameSearch"
 import RegionSearch from "./regionComponents/RegionSearch"
+import CurrencySearch from "./currencyComponents/CurrencySearch"
 
 export default function Home () {
 
@@ -25,15 +26,12 @@ export default function Home () {
                             <LangSearch/>
                         </div>
                     </div>
-                    
                 </div>
-                {/* <div className="spacer"></div> */}
                 <div className="homeGrid">
-                    
                     <div className="homeBox" id='currencyBox' >
                         <div className="homeBoxContents">
                             <p>Looking to spend a specific Currency?</p>
-                            <button>Explore</button>
+                            <CurrencySearch/>
                         </div>
                     </div>
                     <div className="homeBox" id='regionBox' >

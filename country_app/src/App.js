@@ -11,6 +11,7 @@ function App() {
     countryName: '',
     spokenLanguage: '',
     countryRegion: '',
+    countryCurrency: '',
     colorTheme: '',
   });
   

@@ -38,7 +38,7 @@ export default function NameRSLT (props) {
         
     } else {
         return (
-            <div className='RSLTSPage' style={{borderLeft: '150px solid #A1C181',
+            <div className='countryContainer' style={{borderLeft: '150px solid #A1C181',
                 borderRight: '150px solid #A1C181'}} >
                 
                 <div className='newSearchBar' >
@@ -50,7 +50,7 @@ export default function NameRSLT (props) {
                 
                 <div className='countryList'>
                     {props.countries ? props.countries.map((country, index) => (
-                        <div key={index} className="countryCard" onClick={()=> showCountry(index)}>
+                        <div key={index} className="countryCard" onClick={()=> showCountry(index)} style={{borderColor: '#A1C181'}}>
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>

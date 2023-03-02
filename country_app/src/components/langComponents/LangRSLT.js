@@ -37,6 +37,7 @@ export default function LangRSLT (props) {
         
     } else {
         return (
+            
             <div className='countryContainer' style={{borderLeft: '150px solid #FCCA46',borderRight: '150px solid #FCCA46'}}>
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
@@ -52,6 +53,7 @@ export default function LangRSLT (props) {
                         </div>    )):null }
                 </div>
             </div>)
+            
 
         
         
