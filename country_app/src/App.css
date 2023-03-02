@@ -22,6 +22,7 @@
   padding: 10px 30px;
   text-decoration: none;
   font-weight: bold;
+  color: white
 }
 .navLink:visited{
   color: white;
@@ -75,18 +76,6 @@
   display: flex;
   justify-content: space-between;
 }
-.leftBox{
-  height:auto;
-  width:15%;
-  background-color: #FCCA46;
-}
-
-.rightBox{
-  height:auto;
-  width:15%;
-  background-color: #FCCA46;
-}
-
 
 .listTitle {
   padding: 25px;
@@ -111,5 +100,56 @@ transform: scale(1.3);
 margin-left: 30px;
 }
 /* Country Details CSS */
+.details_page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: ;
+}
+.image_container {
+  margin-top: 10vh;
+  background-color: #A1C181;
+  border-radius: 40px 40px 40px 40px;
+  height: 85vh;
+  width: 30vw
+}
+.flag, .coatOfArms {
+  display: block;
+  padding: 20px;
+  margin: auto;
+}
+.flag{
+  width:25vw;
+  margin-top: 3vh; 
+}
+.coatOfArms {
+  width:20vw;
+  height: 20vw;
+}
 
-
+.countryName {
+  background-color: #A1C181;
+  color:white;
+  padding: 15px;
+  border-radius: 40px 0px 0px 40px;
+  margin-top: 10vh;
+  margin-right:-15vh;
+  width:38vw;
+  text-align: left;
+}
+.country_facts {
+  text-align: left;
+  margin-left: 5vw;
+  font-size: larger ;
+  padding: 0 3vw;
+  border-left: 1px solid #A1C181;
+}
+.leftBox{
+  height:auto;
+  width:10%;
+  background-color: #A1C181;
+}
+.rightBox{
+  height:100vh;
+  width:10%;
+  background-color: #A1C181;
+}
