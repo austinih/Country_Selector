@@ -6,10 +6,6 @@ import DataContext from '../DataContext'
 import { JsonFunction } from 'react-router-dom';
 
 
-
-//CountryDetailsV2 is replaces CountryDetails for certain search functions
-// Used for: Name, Language,
-
 export default function CountryDetailsV2 (props) {
     
     let { index } = useParams()
@@ -38,18 +34,17 @@ export default function CountryDetailsV2 (props) {
                     <div className='country_facts' style={{borderColor:countryInfo.colorTheme}}>
                         <h3><span style={{color:countryInfo.colorTheme}}>Official Name:</span> {country.name.official}</h3>
                         <h3><span style={{color:countryInfo.colorTheme}}>Capital:</span> {country.capital}</h3>
-                        <h3><span style={{color:countryInfo.colorTheme}}>Population:</span> {country.population}</h3>
-                        <h3><span style={{color:countryInfo.colorTheme}}>Continent:</span> {country.continents}</h3>
                         <h3><span style={{color:countryInfo.colorTheme}}>Region:</span> {country.region}</h3>
                         <h3><span style={{color:countryInfo.colorTheme}}>Sub-Region:</span> {country.subregion}</h3>
+                        <h3><span style={{color:countryInfo.colorTheme}}>Population:</span> {country.population}</h3>
+                        <h3><span style={{color:countryInfo.colorTheme}}>Area in km²:</span> {country.area}</h3>
+                        <h3><span style={{color:countryInfo.colorTheme}}>Driving side:</span> {country.car.side}</h3> 
+                        <button onClick={() => navigate(-1)}>Back</button>
                         {/* <h3>Currencies: {country.currencies}</h3> */}
                         {/* <h3>Languages: {country.languages}</h3> */}
                         {/* <h3>UN Member: {country.unMember}</h3> */}
                         {/* <h3>Landlocked: {country.landlocked}</h3> */}
                         {/* <h3><span style={{color:countryInfo.colorTheme}}>Bordering Countries:</span> {country.borders}.</h3> */}
-                        <h3><span style={{color:countryInfo.colorTheme}}>Area in km²:</span> {country.area}</h3>
-                        <h3><span style={{color:countryInfo.colorTheme}}>Driving side:</span> {country.car.side}</h3> 
-                        <button onClick={() => navigate(-1)}>Back</button>
                     </div>
                 </div>
                 <div className='rightBox' style={{backgroundColor:countryInfo.colorTheme}}></div>
