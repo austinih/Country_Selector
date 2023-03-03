@@ -20,8 +20,9 @@ This app is designed to be an easy and stylish way to learn about hte many count
 - Country Details page color scheme to change depending on option selected on home page.
 
 ## Resources
-[REST Countries API](https://restcountries.com/#rest-countries)
-[FAV Icon(icon8.com)](https://icons8.com/icon/43164/earth-globe)
+- [REST Countries API](https://restcountries.com/#rest-countries)
+
+- [FAV Icon(icon8.com)](https://icons8.com/icon/43164/earth-globe)
 
 
 
