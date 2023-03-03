@@ -1,6 +1,9 @@
 # Country Discovery App
 This app is designed to be an easy and stylish way to learn about hte many countries in the world. Userse will have multiple ways to search for countries so there will always be something new to expereince. Once a country is selected, the page will display interesteing details, an image of the country's flag, and a map.
 
+## Deployed Site
+[Country Discovery - Home](https://country-discovery.netlify.app/)
+
 ## Wire-Frames
 [Figma Wire-Frame](https://www.figma.com/file/APYcVeEpxo7a4AM4ZXHFZh/Project-2---Countries?node-id=0%3A1&t=kfoKekIAfLCfv2CB-0)
 

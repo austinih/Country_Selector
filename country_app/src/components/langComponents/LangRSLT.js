@@ -14,7 +14,6 @@ export default function LangRSLT (props) {
 
         const getCountries = async () => {
             const response = await axios.get(url)
-            console.log(response.data)
             props.setCountries(response.data)
         }
         getCountries()
@@ -22,7 +21,6 @@ export default function LangRSLT (props) {
 
     const showCountry = (index) => {
         navigate(`${index}`)
-        console.log(`${index}`)
     }
 
     if (!props.countries) {
