@@ -39,7 +39,7 @@ export default function CountryDetailsV2 (props) {
                         <h3><span style={{color:countryInfo.colorTheme}}>Population:</span> {country.population}</h3>
                         <h3><span style={{color:countryInfo.colorTheme}}>Area in km²:</span> {country.area}</h3>
                         <h3><span style={{color:countryInfo.colorTheme}}>Driving side:</span> {country.car.side}</h3> 
-                        <button onClick={() => navigate(-1)}>Back</button>
+                        <button className="backBtn" onClick={() => navigate(-1)}>Back</button>
                         {/* <h3>Currencies: {country.currencies}</h3> */}
                         {/* <h3>Languages: {country.languages}</h3> */}
                         {/* <h3>UN Member: {country.unMember}</h3> */}
