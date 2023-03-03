@@ -4,12 +4,10 @@ import { useNavigate } from "react-router-dom";
 import DataContext from '../../DataContext';
 import LangSearch from './LangSearch';
 
-
-
 export default function LangRSLT (props) {
     
     const { countryInfo, setCountryInfo } = useContext(DataContext)
-
+    let navigate = useNavigate()
 
     useEffect(() => {
         const url = `https://restcountries.com/v3.1/lang/${countryInfo.spokenLanguage}`
@@ -19,12 +17,8 @@ export default function LangRSLT (props) {
             console.log(response.data)
             props.setCountries(response.data)
         }
-
         getCountries()
-
     },[])
-
-    let navigate = useNavigate()
 
     const showCountry = (index) => {
         navigate(`${index}`)
@@ -32,12 +26,9 @@ export default function LangRSLT (props) {
     }
 
     if (!props.countries) {
-        return <h1> loading please wait</h1>
-        
-        
+        return <h1> loading please wait</h1>   
     } else {
         return (
-            
             <div className='countryContainer' style={{borderLeft: '150px solid #FCCA46',borderRight: '150px solid #FCCA46'}}>
                 <div className='newSearchBar' >
                     <div className="spacer"></div>
@@ -52,10 +43,6 @@ export default function LangRSLT (props) {
                             <h3 className='countrySelect'>{country.name.common}</h3>
                         </div>    )):null }
                 </div>
-            </div>)
-            
-
-        
-        
+            </div>) 
     }
 }

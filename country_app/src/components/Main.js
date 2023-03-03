@@ -14,7 +14,6 @@ export default function Main () {
     
     const [countries, setCountries] = useState([])
 
-
     return (
         <div className='main'>
             <Routes>
