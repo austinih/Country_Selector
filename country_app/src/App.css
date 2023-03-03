@@ -76,7 +76,9 @@
   display: flex;
   justify-content: space-between;
 }
-
+.countryContainer {
+  min-height: 100vh;
+}
 .listTitle {
   padding: 25px;
 }
@@ -88,7 +90,6 @@
   margin-bottom: 50px;
   width: 70%vw;
   text-align: left;
-
 }
 .countryCard {
   width:250px;
@@ -122,7 +123,10 @@ margin-left: 30px;
   width:20vw;
   height: 20vw;
 }
-
+.country_details {
+  display: flex;
+  justify-content: space-evenly;
+}
 .countryName {
   color:white;
   padding: 15px;
@@ -147,10 +151,10 @@ margin-left: 30px;
   
 }
 .leftBox{
-  height:auto;
+  min-height:100vh;
   width:10%;
 }
 .rightBox{
-  height:auto;
+  min-height:100vh;
   width:10%;
 }
