@@ -40,7 +40,7 @@ export default function RegionSearch (props) {
     return (      
             <form onSubmit={handleSubmit}>
                 <label htmlFor="countryRegion">
-                    <select value={formState.countryRegion} onChange={handleChange}>  
+                    <select value={formState.countryRegion} onChange={handleChange} >  
                         <option value="Africa">Africa</option>
                         <option value="Americas" >Americas</option>
                         <option value="Antarctic" >Antarctic</option>

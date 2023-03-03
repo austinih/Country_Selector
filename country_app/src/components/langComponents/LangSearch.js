@@ -36,7 +36,7 @@ export default function LangSearch (props) {
     return (      
             <form onSubmit={handleSubmit}>
                 <label htmlFor="spokenLanguage"></label>
-                <input id="spokenLanguage" type="text" onChange={handleChange}/>
+                <input id="spokenLanguage" type="text" onChange={handleChange} placeholder="Language"/>
                 <button type='submit'>Search</button>
             </form>
         

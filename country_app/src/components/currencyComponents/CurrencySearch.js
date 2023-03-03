@@ -35,7 +35,7 @@ export default function CurrencySearch (props) {
     return (      
             <form onSubmit={handleSubmit}>
                 <label htmlFor="countryCurrency"></label>
-                <input id="countryCurrency" type="text" onChange={handleChange}/>
+                <input id="countryCurrency" type="text" onChange={handleChange} placeholder="Currency"/>
                 <button type='submit'>Search</button>
             </form>
     )

@@ -35,7 +35,7 @@ export default function NameSearch (props) {
     return (      
             <form onSubmit={handleSubmit}>
                 <label htmlFor="countryName"></label>
-                <input id="countryName" type="text" onChange={handleChange}/>
+                <input id="countryName" type="text" onChange={handleChange} placeholder="Country Name"/>
                 <button type='submit'>Search</button>
             </form>
     )
